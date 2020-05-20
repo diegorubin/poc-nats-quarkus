@@ -12,10 +12,10 @@ public class ReactiveResourceTest {
     @Test
     public void testHelloEndpoint() {
         given()
-          .when().get("/echo")
-          .then()
-             .statusCode(200)
-             .body(is("hello"));
+        .when().get("/echo")
+        .then()
+        .statusCode(200)
+        .body(is("response from reply"));
     }
 
 }
